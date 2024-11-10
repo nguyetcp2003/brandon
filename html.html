@@ -1,0 +1,189 @@
+HTML <HYPER TEXT MARK LANGUAGE>
+
+-html co ban-
+<!DOCTYPE html>
+<html>
+     <head>
+
+     </head>
+
+     <body>
+
+     </body>
+</html>
+
+- 1 SO THE CO BAN -
++ <h1>,<h2>,<h3>,<h4>,<h5>,<h6>
++ <p>Paragraph</p>
++ <br>Break line #the khong can phai dong
++ <hr>Tao ra mot cai doan nam ngang giua hai doan van ban #the khong can phai dong
+
+- CAC LOAI DINH DANG VAN BAN 
++<p>Day la van ban<b>in dam</b></p>
++<p>Day la van ban<i>in nghieng</i></p>
++<p>Day la van ban<big/small>lon</big/small></p>
++<p>Day la van ban<sub>usbscript</sub></p> #se nho hon va lui xuong 1 dong
++<p>Day la van ban<ins>inserted</ins></p> #co dau gach nganh duoi chu kieu cho no chu y hon
++<p>Day la van ban<del>deleted</del></p> #no co dau gach ngang chu
++<p>Day la van ban<mark>marked</mark></p> #van ban duoc danh dau
+
++COMMENT : <!-- day la mot doan van ban -->
+
+- LINK/ HYPERLINK
+    <a href="http:......." target="_self"/"_blank"> #nam nguyen trong mot cai tab 
+         Google                                     #chay sang mot cai tab khac
+    </a>
+    
+    <a href='page2.html'>
+        Page2   #tao mot cai file ten la Page2 
+                # an vao chu page2 se nhay sang file page2
+                # voi dieu kien la page 2 phai nam gan cai index.html neu khong thi <a href="/Folder/page2.html"></a>
+    </a>
+    
+- IMAGE
+    <img src="model.jpg">
+    <!--neu ma no nam trong folder ten la images    #hien ra thay the khi khong co anh-->
+    <img src="/images/modek.jpg" height="300px" alt="Nguoi mau"  title="nguoi mau" >  <!--hien ra cai nho nho o duoi con tro khi dua vo-->
+    chi can chinh mot cai la height HOAC width thoi
+    
+    <a href="link">
+        <img src="images/model.jpg">  #n
+    </a>
+    
+    
+- AUDIO
+    <audio loop autoplay muted control >
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.way" type="audio/mpeg"> <!--khi am thanh kia bi hong  thi se chay sang audio duoi-->
+    </audio>
+    
+- VIDEO <!--tuong tu nhu audio-->
+    <video autoplay muted controls src="....." width="300"></video>
+
+    
+-LIST
+    <h2>Unordered List</h2>
+       <ul>
+           <li></li>
+           <li></li>
+       </ul>
+    <h2>Ordered List</h2>
+       <ol>
+           <li></li>
+           <li></li>
+       </ol>
+    <h2>Description List</h2>
+       <dl>
+           <dt></dt>
+           <dt></dt>
+       </dl>
+    
+-NESTED lIST
+       <ul>
+           <li>Thit
+               <ul>
+                   <li>Bo</li>
+                   <li>Lon</li>
+               </ul>
+           </li>
+           <li></li>
+       </ul> 
+
+-TABLE
+    <table>
+        <tr bgcolor="grey">
+           <th>Stt</th>
+           <th>Ten</th>
+        </tr>
+        <!--Dong 1-->
+        <tr>
+            <th>1</th>
+            <th>Bui Anh Nguyet</th>
+        </tr>
+        <!--Dong 2-->
+    </table>
+    
+-COLOUR
+    <body style="background-color: white;">
+        <h1 style="color: red;">Xin chao</h1>
+        <h1 style="color: rgb(153,204,0);">Xin chao</h1>
+        <h1 style="color: #232563r64r">Xin chao</h1>
+    </body>
+    
+-SPAN VA DIV
+    <!--div gom phan tu theo khoi/span gom phan tu theo dong-->
+
+-HEAD
+    
+    <title>Home</title>
+    <meta charset="utf-8"> 
+    <meta name="description" content="Home">
+    <meta name="keywords" content="Home"> <!--Lien quan den SEO-->
+    <meta http-equiv="refresh" content="5"> <!--Sau 2 giay no se reload lai 5 lan-->
+
+-IFRAME
+        <iframe width="" src=""></iframe> 
+    <!--Dung de nhung mot noi dung nao do cua file khac vao trang web hien tai-->
+
+-BUTTON
+    <button onClick="changeText()" style="border-radius: 5px; background-color: black">
+        Click me
+    </button>
+    <h1 id="h1id">Hello</h1>
+    <script>
+        changeText = () => {
+            document.getElementById("h1id").innerHTML = "Goodbye";
+        }
+    </script>
+    
+    <!--Khi an vao Click me Hello se chuyen thanh Goodbye-->
+    
+-HTML form
+    
+    <form method="POST" action=""> <!--Gui den mot dia chi nao do-->
+        
+        <h1>Dang nhap</h1>
+        <div>
+            <label for="fname">first name :</label>
+            <input type="text" id="fname" name="fname"><br>
+        </div>
+        <div>
+            <label for="lname">last name :</label>
+            <input type="text" id="lname" name="lname"><br>
+        </div>
+        <div>
+            <label for="pass">password:</label>
+            <input type="password" id="lname" name="lname"><br>
+        </div>
+        <div>
+            <label for="date">date :</label>
+            <input type="date" id="fname" name="fname"><br>
+        </div>
+        <div>
+            <label for="age">Age :</label>
+            <input type="number" id="fname" name="fname"><br>
+        </div>
+        
+        NUT CHON
+        <div>
+            <select>
+                <option value="CNTT">CNTT</option>
+                <option value="GP">GP</option>
+                <option value="AI">AI</option>  
+            </select>
+        </div>
+        
+        RADIO <!--CHON MOT TRONG MAY CAI-->
+        <div>
+            <input type="radio" name="role" value="Student">Student
+            <input type="radio" name="role" value="Teacher">Teacher
+
+        </div>
+        
+        <input type="submit">
+        <input type="reset">
+        
+    </form>
+    
+    
+    

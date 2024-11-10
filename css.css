@@ -1,0 +1,126 @@
+CSS (cascading style sheets)
+
+selector{
+    property1: value;
+    property2: value;
+}
+
+A.FONT CHU
+
+p{
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold/300;
+    text-decoration: underline/dotted underline;
+    
+}
+
+
+
+B.DINH DANG VE LE CUA MOT CAI ELEMENT
+
+p{
+    border-style: solid/ dashed / dotted/ ridge/ inset/ outset;
+    border-width: 20px;
+    border-color: red;
+    border-radius: 5px; bo tron
+    padding: 10px; khoang cach tu doi tuong den le
+    border-top-color: blue;
+    border-right-width: 15px;
+    
+}
+
+
+C.BACKGROUND
+
+body{
+    background: linear-gradient(to right, skyblue,lightgreen); se bi lap
+    background-repeat: no-repeat; co mau mot doan thoi 
+    background-attachment: fixed; ca trang co mau day
+    background-image: url("nguoimau.jpg");
+    background-position: center;
+    background-size: cover; du thay doi man hinh co nao thi hinh anh van se ra full man hinh
+}
+
+D. MARGIN & PADDING
+ MARGIN>> BORDER >> PADDING >> CONTENT
+#box1{
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    background-color: yellow;
+    padding: 30px; khoang cach tu chu den le
+    
+}
+
+<!--Margin la khong gian bao quanh element-->
+        
+<!--Padding la khoang cach tu border den noi dung-->
+
+E.POSITION
+co 5 gia tri : absolute, fixed, relative,static, sticky
++ static: mac dinh
++ relative : se di kem cac thuoc tinh top, bottom, right,left >> no se lien quan den phan ban dau cua no >> phai tim dc the ban dau cua no >>
+
++ absolute : so voi phan tu cha cua no co phan tu position la relative >> vidu bao quanh phan tu la body se can theo body 
+
++ fixed: khi keo man hinh xuong nhung co mot so thanh phan khong bi troi mat van nam o doan day
+
++ sticky: la ket hop cua relative va fixed
+
+
+F. SHADOW 
+h1{
+    text-shadow: 0px 0px 0px grey; phai/ trai la am + ben duoi + ben tren + mau , co the them mau khac y chang vo phia sau 
+    box-shadow : y chang text
+}
+
+
+J.TRANSFORM dung cho 2D , 3D
+#style{
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    
+    transform: translateX(40px); dich theo truc x  
+        
+    transform: rotateX() ; xoay ngang theo deg     
+    transform: scale(); phong to theo truc 
+    transform: skewX(); nghieng theo deg  
+    
+    
+    transform: matrix(scaleX(),skewX(),scaleY(),translateX(), translateY());
+}
+
+H.PSEUDO CLASS (lop gia)
++ khi dua chuot ra thi doi tuong se thay doi nhu nao
+button:hover{
+    background-color: red;
+}
+
+
++ khi an giu se doi mau
+button:active{
+    background-color: green;
+}
+
++nth child : tao ra mot cai danh sach ul li 
+roi truyen vao mot so thu tu va doi mau doi kieu cho moi phan tu day thoi
+
+li:nth-child(3/3n/ 3n+ 1){
+    
+}
+
+
+F.RESPONSIVE dung d echi mot cai trang web co the hien thi tot tren cac thiet bi khac nhau
+
+320px smartphone , 768px tablet, 1024px laptop PC TV
+@media all and (max-width: 768px){
+    h1{
+       color:red; 
+    }
+}
+
+>> khi keo man hinh ve muc do 768px thi moi doi thanh mau do

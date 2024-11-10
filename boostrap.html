@@ -1,0 +1,208 @@
+BOOTSTRAP 
+
+xs Extra small <576 portrait mobile
+sm Small >= 576 lanscape mobile
+md Medium >=768 portrait tablet
+lg LArge >=992px lanscape tablets
+xl Extra large >= 1200px laptops, destops, TVs
+
+
+
+
+1. grid system cua boostrap duoc chia thanh 3 phan dang chu y : container > row > column
+CHIA KHONG GIAN CHIA BO CUC 
+A. COLUMN
+    < column trong bootstap></column>
+<!--them fuild vo thi no se khong can le nua-->
+<!--Neu co nhieu tp phai nho rang chi co 12 cot nen nho phan chia dong deu du de no khong nhay xuong duoi-->
+<!--khi them xs/lg/md vo thi no se khong can le cho den khi man hinh thu nho-->
+<div class="container-fluid/ xs">
+    chchjcjvkvkbklbi
+</div>
+
+
+<!--boostrap cung cap cho chung ta 12 cot nen khi co box no se phan chia dong deu trai dai ra 12 cot-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-1 col-md-3 "> <!--them -1 de dieu chinh do rong cua col-->
+            <div class="box"></div>
+        </div>
+    </div>
+</div>
+    
+B.ROW 
+<div class="container">
+    <div class="row row-cols-2 gx-0 gy-0 g-0"> 
+        <!--chia chieu rong thanh 2 cot-->
+        <div class="col-lg-1 col-md-3 "> <!--them -1 de dieu chinh do rong cua col-->
+            <div class="box"></div>
+        </div>
+    </div>
+</div>
+    
+    
+C. COLOUR
+    <p class="text-primary bg-secondary">Primary</p>
+    <p>Secondary</p>
+    <p>Success</p>
+    <p>Danger</p>
+    <p>Warning</p>
+    <p>Info</p>
+    <p>Light</p>
+    <p>Dark</p>
+    <p>White</p>
+    <p>Muted</p>
+    
+D. TABLE
+    <table class="table table-striped table-hover/ table-primary ">
+        <!--striped tao ra hang dam nhat / hover dua chuot vo se hien dam hon binh thuong-->
+        <tr class="tabel-danger">
+            <th>STT</th>
+            <th>Ten</th>
+            <th>Tuoi</th>
+            <th>Khoa hoc</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Bui Anh Nguyet</th>
+            <th>21</th>
+            <th>Lap trinh web</th>
+        </tr>
+    </table>
+    
+    
+E.FORM
+    
+    <!--Form control-->
+    <form>
+        <div>
+            <label class="form-label" for="email">Email</label>
+        <input readonly class="form-control" type="email" id="email"  >
+        </div>
+        
+        <div>
+            <label for="select">Select</label>
+            <select class="form-select" id="select">
+                <option value="1">1</option>            
+                <option value="2">2</option>      
+            </select>
+        </div>
+        
+        
+    <!--Form Check-->    
+    
+        <div class="form-check form-switch form-check-inline">
+            <input class="form-check-input" type="checkbox" id="password">
+            <label class="form-label" for="password">Dong y</label>
+                                                                            
+        </div>
+    </form>
+    
+F.BUTTON
+    
+    
+    <div class="container">
+        
+        <button class="btn btn-primary">Click me</button>
+        <button class="btn btn-outline-primary">Click me</button> <!--khi cham vao se doi sang mau xanh--> 
+        
+        <!--Mot cai the link cung the gan cho cai btn hoac nguoc lai -->
+        <a class="btn btn-danger">Google</a>
+        <button class="btn btn-link">Google2</button>
+    </div>
+    
+    
+J. ALERT <!--La cai dong hien ra thong bao cho ban mot cai thong tin gi do va ban co the  tat di-->
+    <div class="container">
+        <!--m-2 la margin lui xuong 2-->
+        <div class="alert alert-sucsess/danger m-2 alert-dismissible" role="alert">
+            Ban da dang nhap thanh cong/ Ban dang nhap khong thanh cong
+            <button class="btn-close" aria-label="close"
+                    data-bs-dismiss="alert"></button> 
+            <!--btn-close la dau x nut dong i-->
+        </div>
+    </div>
+
+H.CARD
+<!--Dua hai the len cung mot hang-->
+<div class="container">
+   <div class="card">
+        <img src="" style="width: 300px;" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title">
+                <h5>Card title</h5>
+            </div>
+            <div class="card-subtitle">
+                scjasjcbjasbkcj
+            </div>
+            <div class="card-text">
+                jjbcjmdbgjkfklwehfklhlskdklhklvhlkh
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <!--Chen chu de len anh-->
+    <div class="card">
+        <h1 class="card-header">Hello</h1> 
+        <!--Se hien ra mot cai thanh chu lon header-->
+        <img src="" style="width: 300px;"class="card-img">
+   ***   <div class="card-body card-img-overlay"> ***
+            <div class="card-title">
+                <h5>Card title</h5>
+            </div>
+            <div class="card-subtitle">
+                scjasjcbjasbkcj
+            </div>
+            <div class="card-text">
+                jjbcjmdbgjkfklwehfklhlskdklhklvhlkh
+            </div>
+        </div>
+        <h1 class="card-header">Bye</h1>
+    </div>
+</div>
+    
+    
+I.Modal
+    <!--Khi an vao cai nut nao do se hien ra mot cai thong bao -->
+    <button class="btn btn-primary" data-bs-toogle="modal" data-bs-targey="modal">Open</button>
+    <div class="modal" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"></div>
+                <div class="modal-body"></div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+G. NAVBAR (logo, dang ky, dang nhap) 
+    <!--Luon luon nam ngoai container thi no moi trai dai het trang web-->
+    <!--navbar-expand-lg khi man hinh to thi no moi hien chieu ngang con khi thu be thi cai menu theo chieu doc-->
+    <div class="navbar navbar-expand-lg bg-secondary text-white">
+        <a href="" class="navbar-brand text-white" >Logo</a>
+        <button class="navbar-toggler"data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-togler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="nav">
+          <div class="navbar-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"href="">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"href="">Checkout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"href="">Cart</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
